@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Article</title>
+    <meta name="description" content="Article">
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="container flex_wrap"><a class="logo" title="Go to Home page" href="index.html">
+          <picture>
+            <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="GUI">
+          </picture></a>
+        <nav class="header__menu" aria-label="Breadcrumb">
+          <ul class="header__menu-list">
+            <li class="header__menu-item"><a class="header__menu-ref" title="Home" href="#!">HOME</a></li>
+            <li class="header__menu-item"><a class="header__menu-ref menu-active" title="Articles" href="index.html">ARTICLES</a></li>
+            <li class="header__menu-item dropdown"><a class="header__menu-ref dropdown__heading" title="Videos" href="#!">VIDEOS</a>
+              <ul class="dropdown__content dropdown_style">
+                <li><a title="Recent" href="videos.html">Most Recent</a></li>
+                <li><a title="Popular" href="videos.html">Most Popular</a></li>
+                <li><a title="All" href="videos.html">All</a></li>
+              </ul>
+            </li>
+            <li class="header__menu-item"><a class="header__menu-ref" title="Contacts" href="#!">CONTACT US</a></li>
+          </ul>
+        </nav>
+        <div class="sign"><a title="Sign in" href="/">Sign in</a><span>/ </span><a title="Sign up" href="/">Sign up</a></div>
+        <form class="search-form" title="Search" action="/">
+          <label class="search-form__label" for="togle-search"><svg class="search-form__icon" viewBox="0 0 18 18"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M7.165,11.654 C4.742,11.654 2.778,9.689 2.778,7.266 C2.778,4.844 4.742,2.880 7.165,2.880 C9.588,2.880 11.552,4.844 11.552,7.266 C11.552,9.689 9.588,11.654 7.165,11.654 M7.165,0.930 C3.665,0.930 0.828,3.767 0.828,7.266 C0.828,10.766 3.665,13.603 7.165,13.603 C8.739,13.603 10.175,13.026 11.283,12.076 L11.553,12.343 L11.553,13.116 L16.425,17.981 L17.879,16.527 L13.016,11.654 L12.242,11.654 L11.973,11.386 C12.923,10.278 13.501,8.841 13.501,7.266 C13.501,3.767 10.664,0.930 7.165,0.930 "/></svg></label>
+          <input id="togle-search" type="checkbox">
+          <input class="search-form__input" id="search" type="search" placeholder="Search">
+        </form>
+        <div id="burger-menu"><span></span><span></span><span></span></div>
+      </div>
+    </header>
+    <nav class="mobile-menu dropdown_style" id="mobile-menu" aria-label="mobile menu">
+      <ul>
+        <li class="mobile-menu__item"><a class="mobile-menu__ref" title="Sign in or Sign up" href="#!">Sign</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__ref" title="Articles" href="index.html">Articles</a></li>
+        <li class="mobile-menu__item dropdown dropdown_mobile"><a class="mobile-menu__ref" title="Videos" href="#!">Videos</a>
+          <ul class="dropdown__content dropdown_style dropdown__content_mobile">
+            <li><a title="Recent" href="videos.html">Most Recent</a></li>
+            <li><a title="Popular" href="videos.html">Most Popular</a></li>
+            <li><a title="All" href="videos.html">All</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu__item"><a class="mobile-menu__ref" title="Contacts" href="#!">Contact us</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container article-wrapper">
+        <article class="article block-style">
+              <header class="article__info article_padding">
+                <picture class="article__info-img">
+                  <source srcset="img/daniel.webp" type="image/webp"><img src="img/daniel.jpg" alt="Daniel McPherson">
+                </picture>
+                <section aria-label="Author Daniel McPherson"><a class="article__author" href="#">Daniel McPherson</a>
+                  <time class="article__time" datetime="2019-09-24T05:00-07:00">1 hr ago</time>
+                </section>
+              </header>
+              <picture class="article__poster"> 
+                <source srcset="img/article_samsung.webp" type="image/webp"><img src="img/article_samsung.jpg" alt="samsung">
+              </picture>
+          <div class="article__content article_padding">
+            <h1 class="article__content-heading" id="first-article">Samsung Pushes the Edge in S6</h1>
+            <p class="article__content-text">
+              Samsung, the world’s largest smartphone maker, has a big problem—their approach to winning consumers with the best technical specs and the biggest screens has 
+              run out of steam...
+            </p><a class="more-btn" href="/">MORE   </a>
+          </div>
+        </article>
+        <article class="article block-style"> 
+              <header class="article__info article_padding">
+                <picture class="article__info-img">
+                  <source srcset="img/jennifer.webp" type="image/webp"><img src="img/jennifer.jpg" alt="Jennifer Loitz">
+                </picture>
+                <section aria-label="Author Jennifer Loitz"><a class="article__author" href="#">Jennifer Loitz</a>
+                  <time class="article__time" datetime="2019-09-24T05:00-07:00">2 days ago</time>
+                </section>
+              </header>
+              <picture class="article__poster"> 
+                <source srcset="img/article_contrast.webp" type="image/webp"><img src="img/article_contrast.jpg" alt="contrast">
+              </picture>
+          <div class="article__content article_padding">
+            <h1 class="article__content-heading" id="second-article">Contrast is the Key</h1>
+            <p class="article__content-text">
+              A group I follow on Facebook, <i>Aurora Borealis Notifications</i>, photograph the Northern Lights around the world each night and post their sightings. 
+              It’s really spectacular to see how impressive nature can be...
+            </p><a class="more-btn" href="/">MORE</a>
+          </div>
+        </article>
+      </div>
+    </main>
+    <section class="pagination" aria-label="pagination">
+      <div class="container flex_wrap">
+        <button class="pagination__btn">
+           <svg class="arrow-left" width="16px" height="16px" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M16.004,8.999 L3.719,8.999 L9.609,14.998 L8.000,16.000 L-0.004,8.000 L8.000,-0.000 L9.609,1.002 L3.719,7.001 L16.004,7.001 L16.004,8.999 Z"/>
+          </svg>  
+          Previos
+        </button>
+        <button class="pagination__btn">
+           Next
+          <svg class="arrow-right" width="16px" height="16px" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M-0.004,8.999 L12.281,8.999 L6.391,14.998 L8.000,16.000 L16.004,8.000 L8.000,-0.000 L6.391,1.002 L12.281,7.001 L-0.004,7.001 L-0.004,8.999 Z"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <nav class="footer__menu" aria-label="footer navigation"><a class="footer__menu-ref" title="Home" href="/">Home</a><a class="footer__menu-ref" title="Articles" href="/">Articles</a><a class="footer__menu-ref" title="Videos" href="videos.html">Videos</a><a class="footer__menu-ref" title="Contact us" href="/">Contact us</a></nav><span class="copyright">© 2015. All Rights Reserved.</span>
+      </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

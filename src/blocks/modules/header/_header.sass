@@ -1,0 +1,230 @@
+#header
+    position: fixed
+    top: 0
+    width: 100%
+    height: 90px
+    background-color: $main_color
+    z-index: 1000
+
+.logo
+    width: 55px
+    height: 51px
+    @include md(flex, 1 1 55px)
+    @include sm(flex, 1 1 55px)
+    @include md(margin-left, 10px)
+
+// HEADER____________________________________________________________
+.header__menu
+    flex: 1 1 680px
+    align-self: flex-end
+    margin-left: 55px
+    @include lg(margin-left, 20px)
+    @include md(display, none)
+    @include sm(display, none)
+    &-list
+        white-space: nowrap
+    &-item
+        display: inline-block
+        height: 64px
+        padding: 16px 25px
+        margin-left: 10px
+        margin-right: 10px 
+        &:nth-last-child(1) 
+            margin-left: 0
+            padding: 16px 0
+        &:nth-child(1)
+            @include lg(display, none)
+    &-ref 
+        font-family: $regular
+        font-size: 14px
+        text-transform: uppercase
+        color: $bg_text_color
+        opacity: 0.54
+        transition: .3s
+        &:hover
+            opacity: 1
+        &.menu-active
+            position: relative
+            opacity: 1
+            &:before
+                content: ''
+                position: absolute
+                top: 44px
+                left: calc(50% - 60px)
+                width: 120px
+                height: 4px 
+                background-color: $bg_text_color
+                @include md(width, 130%)
+                @include md(left, calc(50% - 65%))   
+
+// DROPDOWN MENU VIDEOS______________________________________________
+.dropdown
+    position: relative
+    width: 138px
+    border-top-right-radius: 2px
+    border-top-left-radius: 2px
+    margin-right: 5px
+    &.dropdown_mobile
+        width: inherit
+        border-radius: 0
+        margin-right: 0
+    &__heading
+        transition: none
+    &__heading:after      
+        content: ''
+        display: none
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 5px 5px 5px 5px 
+        border-color: transparent transparent #b9b9b9 transparent
+        margin-left: 25px
+        margin-bottom: 2px
+    &__content
+        display: none
+        position: absolute
+        width: 100%
+        padding: 16px 0
+        left: 0
+        top: 98%
+        z-index: -1
+        li
+            padding: 10px 0
+            &:hover
+                background-color: #eeeeee  
+        a
+            font-family: $regular
+            font-size: 14px
+            color: #444444
+            padding: 0 25px
+            &:active
+                color: $btn_color
+        &_mobile
+            width: 138px
+            left: -130px
+            top: -190%
+            z-index: 1
+            li
+                padding: inherit
+                &:hover
+                    background-color: inherit
+            a
+                @extend .mobile-menu__ref
+
+.dropdown:hover
+    background-color: #fafafa
+    & .dropdown__heading:after           
+        display: inline-block         
+    & .dropdown__heading
+        color: #444444      
+        opacity: 1
+    & .dropdown__content
+        display: block 
+
+//  REGISTRATION_____________________________________________________________________   
+.sign 
+    align-self: flex-end
+    height: 64px
+    padding-top: 16px
+    @include sm(display, none)  
+    @include md(display, none) 
+    & a, span
+        font-family: $regular
+        font-size: 14px
+        color: $bg_text_color
+        padding: 0 1px 
+        white-space: nowrap
+    &.sign_hiden
+        display: none
+
+//   SEARCH__________________________________________________________________
+.search-form
+    max-width: 344px
+    padding-top: 14px
+    margin-left: 25px
+    white-space: nowrap
+    @include md(padding-top, 5px)
+    &__label
+        position: relative
+        display: inline-block
+        width: 18px
+        height: 18px
+        @include md(width, 24px)
+        @include md(height, 24px)
+    &__icon
+        position: absolute
+        top: 0
+        left: 0
+        cursor: pointer
+    &__input
+        width: 0
+        padding-left: 0px
+        font-family: $regular
+        font-size: 20px
+        color: $bg_text_color
+        height: 48px
+        border-radius: 2px
+        background-color: $main_color
+        opacity: 0
+        &::placeholder
+            font-family: $regular
+            font-size: 20px
+            color: #999999
+            
+#togle-search
+    display: none
+    position: absolute
+    &:checked~.search-form__input
+        width: 100%
+        padding-left: 26px
+        opacity: 1
+
+// BURGER & MOBILE MENU HERE_________________________________
+#burger-menu
+    display: none
+    flex: 0 0 30px
+    flex-flow: column nowrap
+    justify-content: space-between
+    height: 24px
+    margin-left: 36px  
+    margin-right: 22px
+    cursor: pointer
+    @include md(display, flex)
+    @include sm(display, flex)
+    span
+        display: block
+        width: 100%
+        height: 4px
+        background-color: $bg_text_color
+// MOBILE-MENU_________________________________________________
+.mobile-menu 
+    display: none
+    position: fixed
+    width: 112px 
+    top: 94px  
+    padding: 12px 0 6px
+    z-index: 1001
+    @include sm(right, 10px)
+    @include md(right, 44px)
+    &_active
+        display: block
+    &__item
+        padding: 16px 0 
+    &__ref
+        padding: 0 16px  
+        font-family: $regular
+        font-size: 14px
+        color: $mobile_menu_color
+        &:active
+            color: $btn_color
+        &:hover
+            color: $btn_color
+
+
+    
+        
+    
+    
+
+    
+       

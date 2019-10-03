@@ -1,0 +1,14 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+	- const title = "Videos"
+	- const disc = "Videos"
+
+block content
+	- const active = "Videos"
+	include ../../blocks/modules/header/header
+	include ../../blocks/modules/videos/videos_main
+	include ../../blocks/modules/footer/footer
+block scripts
+	script(src="js/main.js")

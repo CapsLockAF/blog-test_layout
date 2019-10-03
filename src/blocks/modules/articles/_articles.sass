@@ -1,0 +1,99 @@
+.article-wrapper
+    padding: $padding_top $pading_md 0 $pading_lg  
+    @include sm(padding-top, 100px)
+.article
+    max-width: 780px
+    margin-bottom: 40px
+    @include sm(margin-bottom, 10px)
+    &:last-child
+        margin-bottom: 94px
+        @include lg(margin-bottom, 40px)
+        @include sm(margin-bottom, 10px)
+    &_padding
+        padding: 28px 73px 0 30px
+        @include lg(padding-right, 40px)
+        @include sm(padding-right, 40px)
+    &__info
+        display: flex
+        width: 100%
+        height: 84px
+        &-img
+            position: relative
+            display: inline-block
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            background-color: #989898
+            margin-right: 16px
+            overflow: hidden
+            img
+                position: absolute
+                width: 60px
+                left: -10px
+                top: -10px
+        section
+            display: inline-block
+    &__author
+        display: block
+        font-family: $medium
+        font-size: 16px
+        color: #4d4d4d
+        margin-bottom: 5px
+        line-height: 1
+    &__time
+        font-family: $regular
+        font-size: 14px
+        color: #4d4d4d
+
+    &__poster
+        display: inline-block      
+        img 
+            width: 100%
+            vertical-align: middle
+    &__content
+        padding-bottom: 50px
+        &-heading
+            font-family: $medium
+            font-size: 36px
+            margin-bottom: 20px
+            line-height: 48px
+        &-text
+            text-align: justify
+            line-height: 30px
+            margin-bottom: 40px
+            i
+                font-style: italic
+.more-btn
+    @extend .flex_wrap
+    justify-content: center
+    width: 112px
+    height: 36px
+    border-radius: 2px
+    background-color: $btn_color
+    box-shadow: $shadow_component
+    font-family: $regular
+    font-size: 14px
+    color: $bg_text_color
+    text-transform: uppercase
+    cursor: pointer
+    transition: .3s
+    &:hover
+        background-color: $btn_color_hover
+
+.pagination
+    width: 100%
+    height: 96px
+    background-color: $btn_color
+    &__btn
+        font-family: $medium
+        color: $bg_text_color
+        font-size: 19px
+        background-color: transparent
+.arrow-left
+    margin-right: 14px
+.arrow-right
+    margin-left: 14px
+
+
+
+
