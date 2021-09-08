@@ -1,4 +1,4 @@
-## This site was built using GitHub Pages [GUI](https://capslockaf.github.io/blog-test_layout/)
+## This site was built using GitHub Pages https://capslockaf.github.io/blog-test_layout/
 * Проект розроблений за допомогою: Gulp+Webpack, Babel, Pug, Sass; 
 * Імпортовано normalize.scss (сторонніх бібліотек не використано);
 * Зображення оптимізовані за рекомендацією google (webp, jpg, png);
